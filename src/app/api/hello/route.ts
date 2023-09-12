@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 // https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream#convert_async_iterator_to_stream
 function iteratorToStream(iterator: any) {
   return new ReadableStream({
