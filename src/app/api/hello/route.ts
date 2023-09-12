@@ -21,13 +21,11 @@ function sleep(time: number) {
 const encoder = new TextEncoder();
 
 async function* makeIterator() {
-  for (let i = 0; i < 10; i++) {
     yield encoder.encode("hello");
     await sleep(200);
     yield encoder.encode("my name");
     await sleep(200);
     yield encoder.encode("is anshu");
-  }
 }
 
 export async function GET() {
